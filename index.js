@@ -47,7 +47,7 @@ rp(fileUploadRequest)
                     build_upload_file_id: fileID,
                     release_notes: args.releaseNotes,
                     make_active: true,
-                    // notify_users_on_activation: true,
+                    notify_users_on_activation: false,
                     update_app_icon: true,
                     update_app_name: true,
                 }
