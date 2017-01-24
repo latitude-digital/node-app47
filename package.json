@@ -1,0 +1,9 @@
+{
+  "name": "node-app47",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "request": "^2.79.0",
+    "request-promise-native": "^1.0.3"
+  }
+}
