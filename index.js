@@ -6,6 +6,7 @@ var args = {
     appID: '',
     releaseNotes: '',
     filePath: '',
+    environment: 'Production',
 }
 
 process.argv.forEach(val => {
@@ -46,6 +47,7 @@ rp(fileUploadRequest)
                 build: {
                     build_upload_file_id: fileID,
                     release_notes: args.releaseNotes,
+                    environment: args.environment,
                     make_active: true,
                     notify_users_on_activation: false,
                     update_app_icon: true,
