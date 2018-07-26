@@ -7,6 +7,10 @@ var args = {
     releaseNotes: '',
     filePath: '',
     environment: 'Production',
+    make_active: true,
+    notify_users_on_activation: false,
+    update_app_icon: true,
+    update_app_name: true,
 }
 
 process.argv.forEach(val => {
@@ -48,10 +52,10 @@ rp(fileUploadRequest)
                     build_upload_file_id: fileID,
                     release_notes: args.releaseNotes,
                     environment: args.environment,
-                    make_active: true,
-                    notify_users_on_activation: false,
-                    update_app_icon: true,
-                    update_app_name: true,
+                    make_active: args.make_active,
+                    notify_users_on_activation: args.notify_users_on_activation,
+                    update_app_icon: args.update_app_icon,
+                    update_app_name: args.update_app_name,
                 }
             },
             json: true,
